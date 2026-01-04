@@ -5,7 +5,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 // Import Navbar
-import Navbar from "./Navbar";
+import Navbar from "./component/Navbar";
 
 // Import CSS
 import "./Home.css";

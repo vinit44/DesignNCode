@@ -7,7 +7,7 @@ import {
   Box,
   Paper
 } from "@mui/material";
-import Navbar from "../Navbar";
+import Navbar from "../component/Navbar";
 
 const StudentLogin = () => {
   return (
