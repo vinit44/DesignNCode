@@ -14,6 +14,7 @@ import StudentRegister from "./student/StudentRegister";
 // Company Pages
 import CompanyLogin from "./company/CompanyLogin";
 import CompanyRegister from "./company/CompanyRegister";
+import Dashboard from "./company/Dashboard";
 
 // Admin Page
 import AdminLogin from "./admin/AdminLogin";
@@ -35,6 +36,7 @@ function App() {
         {/* Company Routes */}
         <Route path="/company/login" element={<CompanyLogin />} />
         <Route path="/company/register" element={<CompanyRegister />} />
+<Route path="/company/dashboard" element={<Dashboard />} />
 
         {/* Admin Route */}
         <Route path="/admin/login" element={<AdminLogin />} />

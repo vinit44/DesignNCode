@@ -73,3 +73,5 @@ app.use("/api/company", companyRoutes);
 const adminRoutes = require("./routes/adminRoutes");
 
 app.use("/api/admin", adminRoutes);
+
+app.use("/api/student", require("./routes/studentRoutes"));
