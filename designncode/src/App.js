@@ -17,6 +17,7 @@ import CompanyRegister from "./company/CompanyRegister";
 
 // Admin Page
 import AdminLogin from "./admin/AdminLogin";
+import AdminDashboard from "./admin/AdminDashboard";
 
 // App Component
 function App() {
@@ -37,6 +38,8 @@ function App() {
 
         {/* Admin Route */}
         <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/dashboard" element={<AdminDashboard />} />
+
 
       </Routes>
     </BrowserRouter>

@@ -70,3 +70,6 @@ const companyRoutes = require("./routes/companyRoutes");
 
 app.use("/api/company", companyRoutes);
 
+const adminRoutes = require("./routes/adminRoutes");
+
+app.use("/api/admin", adminRoutes);
