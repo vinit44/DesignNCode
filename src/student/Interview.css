@@ -1,0 +1,138 @@
+.interview-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* FORCE vertical stacking */
+}
+
+
+.interview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.apply-btn {
+  background-color: #426bcb;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.apply-btn:hover {
+  background-color: #2f54b3;
+}
+
+/* TABLE */
+.interview-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.interview-table th,
+.interview-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.interview-table th {
+  background-color: #777;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  font-style: italic;
+  padding: 25px;
+  background-color: #fafafa;
+  
+}
+
+
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 25px;
+  width: 350px;
+  border-radius: 8px;
+}
+
+.modal h2 {
+  margin-bottom: 15px;
+}
+
+.modal label {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.modal input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.cancel-btn {
+  background: #ccc;
+  border: none;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background: #426bcb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+/* ================= HEADER LEFT ================= */
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* ================= BACK BUTTON ================= */
+.back-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #426bcb;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.back-btn:hover {
+  background: #e6edff;
+}

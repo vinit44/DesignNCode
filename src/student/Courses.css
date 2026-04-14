@@ -1,0 +1,245 @@
+/* ================= ROOT ================= */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f6fb;
+  font-family: "Inter", sans-serif;
+}
+
+/* ================= CONTAINER ================= */
+.roadmap-container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+}
+
+/* ================= TOP BAR ================= */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #6b7280;
+}
+
+.syllabus-btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.syllabus-btn:hover {
+  background: #1e40af;
+}
+
+/* ================= QUIZ CARD ================= */
+.quiz-card {
+  background: white;
+  border-radius: 14px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+.quiz-card:hover {
+  transform: translateY(-4px);
+}
+
+.quiz-card h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* PASSED STATE */
+.quiz-card.passed {
+  border-left: 6px solid #22c55e;
+  background: #f0fdf4;
+}
+
+/* ================= QUESTION ================= */
+.question {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* ================= OPTIONS ================= */
+.options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.option {
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  padding: 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s ease;
+}
+
+.option:hover {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.option input {
+  accent-color: #2563eb;
+}
+
+/* ================= ACTION BUTTONS ================= */
+.quiz-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.quiz-btn {
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background: #e5e7eb;
+}
+
+.quiz-btn:hover {
+  background: #d1d5db;
+}
+
+.submit-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.submit-btn:hover {
+  background: #16a34a;
+}
+
+/* ================= COURSE COMPLETE ================= */
+.course-complete {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  color: white;
+  padding: 30px;
+  border-radius: 14px;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.course-complete h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+
+/* ================= ROADMAP GRID ================= */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* ================= ROADMAP CARD ================= */
+.roadmap-card {
+  background: white;
+  border-radius: 14px;
+  padding: 25px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  border-top: 6px solid #2563eb;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.roadmap-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+.roadmap-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #111827;
+}
+
+/* ================= ROADMAP LIST ================= */
+.roadmap-card ul {
+  padding-left: 18px;
+}
+
+.roadmap-card li {
+  margin-bottom: 10px;
+  color: #374151;
+  line-height: 1.5;
+}
+
+/* ================= RESOURCES ================= */
+.resources {
+  margin-top: 60px;
+}
+
+.resources h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* ================= RESOURCE CARDS ================= */
+.resource-link {
+  text-decoration: none;
+}
+
+.resource-card {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  padding: 25px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 15px 30px rgba(37,99,235,0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(37,99,235,0.6);
+}
+
+.resource-card h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.resource-card p {
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+/* ================= BACK BUTTON CONSISTENCY ================= */
+.syllabus-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

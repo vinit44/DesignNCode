@@ -1,0 +1,112 @@
+.beginner-page {
+  padding: 40px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.subtitle {
+  color: #475569;
+  margin-bottom: 30px;
+}
+
+/* Domain cards container */
+.domain-cards {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+/* Domain Card */
+.domain-card {
+  background: rgb(247, 250, 255);
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.115);
+  cursor: pointer;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.domain-card h3 {
+  margin-bottom: 10px;
+  color: #0f172a;
+}
+
+.domain-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Hover */
+.domain-card:hover {
+  transform: translateY(-6px);
+  border-color:#426bcb;
+}
+
+/* Active */
+.domain-card.active {
+  border-color:#426bcb;
+  background: #c7deed;
+}
+
+
+.beginner-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 25px;
+}
+
+.back-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #426bcb;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.back-btn:hover {
+  background-color: #e6edff;
+}
+
+/* Domain Cards */
+
+
+.domain-card h3 {
+  margin-bottom: 6px;
+}
+
+.domain-card.active {
+  border-color: #426bcb;
+  box-shadow: 0 4px 10px rgba(66, 107, 203, 0.3);
+}
+
+.domain-card:hover {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Continue Button */
+.continue-btn {
+  margin-top: 30px;
+  padding: 12px 20px;
+  background: #426bcb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.continue-btn:disabled {
+  background: #cbd5e1;
+  cursor: not-allowed;
+}
+
+.continue-btn:hover:not(:disabled) {
+  background: #2f54b3;
+}
